@@ -1,0 +1,15 @@
+[package]
+name = "actix-scaffold"
+version = "0.1.0"
+authors = ["Flynn <ling7334@gmail.com>"]
+edition = "2018"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[workspace]
+members = ["dao", "service"]
+
+[dependencies]
+service = {path = "./service"}
+env_logger = "0.8.1"
+clap = "2.33.2"
